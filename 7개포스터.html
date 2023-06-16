@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #AD9885;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .icons img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .search-icon img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .join-login {
+            color: #fff;
+        }
+
+        /* 좌측 작은 배너 스타일 */
+        .small-banner {
+            background-color: #fff;
+            width: 20%;
+            padding: 20px;
+            color: #AD9885;
+        }
+
+        .small-banner h3 {
+            margin: 0;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .small-banner hr {
+            border: none;
+            border-top: 1px solid #AD9885;
+            margin: 10px 0;
+        }
+
+        .small-banner ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .small-banner ul li {
+            margin-bottom: 10px;
+        }
+
+        /* 중앙 컨텐츠 스타일 */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .movie-image {
+            width: 50%;
+            text-align: center;
+        }
+
+        .movie-image img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .movie-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .movie-button {
+            background-color: #AD9885;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .sub-buttons {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #AD9885;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 5px;
+            z-index: 1;
+        }
+
+        .movie-button:hover .sub-buttons {
+            display: block;
+        }
+
+        .sub-button {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px 10px;
+            background-color: #AD9885;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .home-icon img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* 추가된 스타일 */
+        .poster-container {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin-top: 20px;
+        }
+
+        .poster-image {
+            width: 20%;
+            text-align: center;
+        }
+
+        .poster-image img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="icons">
+            <img src="phone-icon.png" alt="Phone Icon">
+            <img src="laptop-icon.png" alt="Laptop Icon">
+        </div>
+        <div class="logo">ScreenGem_</div>
+        <div class="icons">
+            <div class="search-icon">
+                <img src="search-icon.png" alt="Search Icon">
+            </div>
+            <div class="join-login">Join|Login</div>
+        </div>
+    </header>
+
+    <div class="small-banner">
+        <h3>ScreenGem_ Movie Recommendation Page</h3>
+        <hr>
+        <ul>
+            <li>Genre</li>
+            <li>Al  Movie Recommendation</li>
+            <li>Domestic/International</li>
+            <li>Gallery</li>
+            <li>Community</li>
+            <li>Book Now</li>
+            <li>My Page</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="movie-image">
+            <img src="busanhaeng.jpg" alt="부산행">
+            <div class="movie-buttons">
+                <div class="movie-button">
+                    국내/국외
+                    <div class="sub-buttons">
+                        <button class="sub-button">국내영화</button>
+                        <button class="sub-button">국외영화</button>
+                        <button class="sub-button">고전영화</button>
+                        <button class="sub-button">1970년대</button>
+                        <button class="sub-button">1980년대</button>
+                        <button class="sub-button">1990년대</button>
+                        <button class="sub-button">2000년대</button>
+                        <button class="sub-button">2010년대</button>
+                        <button class="sub-button">2020년대</button>
+                        <button class="sub-button">어워드수상작</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-icon">
+            <img src="home-icon.png" alt="Home Icon">
+        </div>
+    </div>
+
+    <div class="poster-container">
+        <div class="poster-image">
+            <img src="poster1.jpg" alt="Poster 1">
+        </div>
+        <div class="poster-image">
+            <img src="poster2.jpg" alt="Poster 2">
+        </div>
+        <div class="poster-image">
+            <img src="poster3.jpg" alt="Poster 3">
+        </div>
+        <div class="poster-image">
+            <img src="poster4.jpg" alt="Poster 4">
+        </div>
+        <div class="poster-image">
+            <img src="poster5.jpg" alt="Poster 5">
+        </div>
+        <div class="poster-image">
+            <img src="poster6.jpg" alt="Poster 6">
+        </div>
+        <div class="poster-image">
+            <img src="poster7.jpg" alt="Poster 7">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript를 사용하여 버튼 클릭 시 하위 버튼들의 표시/숨김 동작 구현
+        const movieButton = document.querySelector('.movie-button');
+        const subButtons = document.querySelector('.sub-buttons');
+
+        movieButton.addEventListener('click', function() {
+            subButtons.style.display = subButtons.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
